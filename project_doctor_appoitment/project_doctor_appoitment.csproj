@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="Admin\add_doctor.aspx" />
+    <Content Include="Admin\add_specialty.aspx" />
+    <Content Include="Admin\admin_login.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\remove_doctor.aspx" />
     <Content Include="admin_dashboard.aspx" />
     <Content Include="App_Data\book_my_doc.mdf" />
     <Content Include="App_Data\book_my_doc_log.ldf">
@@ -77,6 +82,9 @@
     <Content Include="contact.aspx" />
     <Content Include="css\responsive.css" />
     <Content Include="css\style.css" />
+    <Content Include="Doctor_panel\appointments_dc-panel.aspx" />
+    <Content Include="Doctor_panel\dashboard_dc_panel.aspx" />
+    <Content Include="Doctor_panel\login_dc_panel.aspx" />
     <Content Include="Doctor_profile.aspx" />
     <Content Include="feedback.aspx" />
     <Content Include="history.aspx" />
@@ -89,6 +97,7 @@
     <Content Include="login.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="payment.aspx" />
+    <Content Include="payment_success.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="search_doctor.aspx" />
     <Content Include="Web.config" />
@@ -100,6 +109,41 @@
     </Compile>
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_doctor.aspx.cs">
+      <DependentUpon>add_doctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_doctor.aspx.designer.cs">
+      <DependentUpon>add_doctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_specialty.aspx.cs">
+      <DependentUpon>add_specialty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_specialty.aspx.designer.cs">
+      <DependentUpon>add_specialty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\remove_doctor.aspx.cs">
+      <DependentUpon>remove_doctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\remove_doctor.aspx.designer.cs">
+      <DependentUpon>remove_doctor.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_dashboard.aspx.cs">
       <DependentUpon>admin_dashboard.aspx</DependentUpon>
@@ -121,6 +165,27 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_panel\appointments_dc-panel.aspx.cs">
+      <DependentUpon>appointments_dc-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor_panel\appointments_dc-panel.aspx.designer.cs">
+      <DependentUpon>appointments_dc-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_panel\dashboard_dc_panel.aspx.cs">
+      <DependentUpon>dashboard_dc_panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor_panel\dashboard_dc_panel.aspx.designer.cs">
+      <DependentUpon>dashboard_dc_panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_panel\login_dc_panel.aspx.cs">
+      <DependentUpon>login_dc_panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor_panel\login_dc_panel.aspx.designer.cs">
+      <DependentUpon>login_dc_panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Doctor_profile.aspx.cs">
       <DependentUpon>Doctor_profile.aspx</DependentUpon>
@@ -178,6 +243,13 @@
     <Compile Include="payment.aspx.designer.cs">
       <DependentUpon>payment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="payment_success.aspx.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment_success.aspx.designer.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registration.aspx.cs">
       <DependentUpon>registration.aspx</DependentUpon>
@@ -212,6 +284,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\Doctor_Images\" />
+    <Folder Include="Admin\specility_images\" />
     <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>

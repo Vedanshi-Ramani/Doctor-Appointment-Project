@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="history.aspx.cs" Inherits="project_doctor_appoitment.history" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
 
-<%--                *********       home page       ***************--%>
-<%--                <main>--%>
-        <!-- Hero Section -->
-        <%--<section class="hero-section py-5">
+    <%--                *********       home page       ***************--%>
+    <%--                <main>--%>
+    <!-- Hero Section -->
+    <%--<section class="hero-section py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7" data-aos="fade-right">
@@ -27,8 +28,8 @@
             </div>
     </section>--%>
 
-        <!-- About Section -->
-        <%--<section class="py-5 bg-white">
+    <!-- About Section -->
+    <%--<section class="py-5 bg-white">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-up">
@@ -48,8 +49,8 @@
             </div>
     </section>--%>
 
-        <!-- Top Doctors -->
-       <%-- <section class="py-5 bg-light">
+    <!-- Top Doctors -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Top Doctors</h2>
@@ -119,10 +120,10 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
-        <!-- Specializations -->
-        <%--<section class="py-5">
+    --%><!-- Specializations -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Specializations</h2>
@@ -174,8 +175,8 @@
             </div>
     </section>--%>
 
-        <!-- How It Works -->
-       <%-- <section class="py-5 bg-light">
+    <!-- How It Works -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">How it Works</h2>
@@ -212,17 +213,17 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
         <!-- Testimonials -->
-        <%--<section class="py-5">
+        <section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Patient Testimonials</h2>
                     <p class="text-muted">
                         What patients say about us.</p>
                 </div>
-                <div class="row g-4">
+    --%>        <%--<div class="row g-4">
                     <div class="col-md-4" data-aos="fade-up">
                         <div class="card border-0 shadow-sm rounded-4 h-100">
                             <div class="card-body">
@@ -270,10 +271,10 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
         <!-- Counters -->
-        <%--<section class="py-5 bg-primary text-white">
+        <section class="py-5 bg-primary text-white">
             <div class="container">
                 <div class="row text-center g-4">
                     <div class="col-md-3" data-aos="zoom-in">
@@ -287,7 +288,7 @@
                             Patients</p>
                     </div>
                     <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
-                        <h2 class="fw-bold">96%</h2>
+    --%>    <%--<h2 class="fw-bold">96%</h2>
                         <p>
                             Satisfaction</p>
                     </div>
@@ -298,10 +299,10 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
         <!-- FAQ -->
-       <%-- <section class="py-5">
+        <section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Frequently Asked Questions</h2>
@@ -335,8 +336,8 @@
             </div>
     </section>--%>
 
-        <!-- Newsletter -->
-        <%--<section class="py-5 bg-light">
+    <!-- Newsletter -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4" data-aos="fade-up">
                     <div class="col-lg-8">
@@ -356,10 +357,10 @@
             </div>
     </section>
     </main>--%>
-<%--                ***********          about us            *************--%>
-<%--                <main>--%>
-        <!-- About Hero -->
-       <%-- <section class="page-hero py-5 bg-light">
+    <%--                ***********          about us            *************--%>
+    <%--                <main>--%>
+    <!-- About Hero -->
+    <%--<section class="page-hero py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-lg-7" data-aos="fade-right">
@@ -374,8 +375,8 @@
             </div>
     </section>--%>
 
-        <!-- Mission & Vision -->
-        <%--<section class="py-5">
+    <!-- Mission & Vision -->
+    <%-- <section class="py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6" data-aos="fade-up">
@@ -394,10 +395,10 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
         <!-- Our Team -->
-        <%--<section class="py-5 bg-light">
+        <section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Team</h2>
@@ -431,10 +432,11 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
-        <!-- Why Choose Us -->
-        <%--<section class="py-5">
+    --%>
+    <!-- Why Choose Us -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6" data-aos="fade-right">
@@ -452,10 +454,10 @@
                     </div>
                 </div>
             </div>
-    </section>--%>
+    </section>
 
         <!-- Timeline -->
-        <%--<section class="py-5 bg-light">
+        <section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Journey</h2>
@@ -488,11 +490,11 @@
             </div>
     </section>
     </main>--%>
-                <%--********           contact us          **********--%>
+    <%--********           contact us          **********--%>
 
-<%--                <main>--%>
-        <!-- Contact Section -->
-        <%--<section class="py-5 bg-light">
+    <%--                <main>--%>
+    <!-- Contact Section -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-5" data-aos="fade-right">
@@ -558,8 +560,8 @@
             </div>
     </section>--%>
 
-        <!-- Map Placeholder -->
-        <%--<section class="py-5">
+    <!-- Map Placeholder -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="card border-0 shadow-sm rounded-4 p-5 text-center" data-aos="fade-up">
                     <h3 class="fw-bold">Google Map Placeholder</h3>
@@ -571,8 +573,8 @@
                 </div>
             </div>
     </section>
-    </main>--%>
-    <%--********            login         *******
+    </main>
+    ********            login         *******
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-5" data-aos="fade-up">
@@ -614,9 +616,9 @@
         </div>
     </div>--%>
 
-                <%--********       registration            ****************--%>
+    <%--********       registration            ****************--%>
 
-                <%--<div class="container py-5">
+    <%-- <div class="container py-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8" data-aos="fade-up">
                             <div class="card border-0 shadow rounded-4 p-4">
@@ -695,9 +697,9 @@
                     </div>
     </div>--%>
 
-                <%--**************     search doctor        ******************--%>
+    <%--**************     search doctor        ******************--%>
 
-                <%--<main class="py-5 bg-light">
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="card border-0 shadow rounded-4 p-4 mb-4" data-aos="fade-up">
             <h2 class="fw-bold mb-4">Find Your Doctor</h2>
@@ -762,17 +764,17 @@
         <div id="doctorResults" class="row g-4">
         </div>
     </div>
-    </main>--%>
+    </main>
 
+    --%>
+    <%--**********         doctor profile               ***********--%>
 
-                <%--**********         doctor profile               ***********--%>
-
-                <%--<main class="py-5 bg-light">
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4" data-aos="fade-right">
                 <div class="card border-0 shadow rounded-4 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Doctor">
+                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Doctor">
                 </div>
             </div>
             <div class="col-lg-8" data-aos="fade-left">
@@ -862,8 +864,8 @@
     </div>
     </main>--%>
 
-                <%--***********            book appoitment      **********--%>
-                <%--<main class="py-5 bg-light">
+    <%--***********            book appoitment      **********--%>
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -919,8 +921,8 @@
     </div>
     </main>--%>
 
-                <%--************       payment       **********--%>
-               <%-- <main class="py-5 bg-light">
+    <%--************       payment       **********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4 justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -991,8 +993,8 @@
         </div>
     </div>--%>
 
-<%--                    ***********     doctro list     ***********--%>
-                   <%-- <main class="py-5 bg-light">
+    <%--                    ***********     doctro list     ***********--%>
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
             <div>
@@ -1094,8 +1096,8 @@
     </div>
     </main>--%>
 
-                    <%--********       feed back  ********--%>
-                   <%-- <main class="py-5 bg-light">
+    <%--********       feed back  ********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5" data-aos="fade-right">
@@ -1151,7 +1153,7 @@
         </div>
     </div>
     </main>
-    **********   history        ************--%>
+    **********   history        ************
     <main class="py-5 bg-light">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
@@ -1204,11 +1206,262 @@
             </div>
         </div>
     </div>
+    </main>--%>
+
+
+    <main class="main-container py-5">
+
+        <div class="container">
+
+            <!-- PAGE HEADING -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+
+                <div>
+                    <h2 class="fw-bold mb-1">Appointment History</h2>
+                    <p class="text-muted mb-0">
+                        Manage your upcoming and completed appointments.
+                   
+                    </p>
+                </div>
+
+                <div>
+                    <asp:TextBox ID="txtSearch" runat="server"
+                        CssClass="form-control"
+                        placeholder="Search doctor or status..."
+                        AutoPostBack="true"
+                        OnTextChanged="txtSearch_TextChanged">
+                    </asp:TextBox>
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+            <asp:Label ID="lblMessage" runat="server"
+                CssClass="message text-success fw-semibold">
+            </asp:Label>
+
+
+            <!-- APPOINTMENT TABLE -->
+            <div class="history-card">
+
+                <div class="table-responsive">
+
+                    <asp:GridView ID="GridView1" runat="server"
+                        AutoGenerateColumns="False"
+                        DataKeyNames="Appointment_Id"
+                        CssClass="table table-bordered table-hover align-middle mb-0"
+                        GridLines="None"
+                        EmptyDataText="No appointments found."
+                        OnRowCommand="GridView1_RowCommand"
+                        OnRowDataBound="GridView1_RowDataBound">
+
+                        <Columns>
+
+                            <asp:BoundField DataField="Appointment_Id"
+                                HeaderText="Appointment ID" />
+
+                            <asp:BoundField DataField="Doc_Name"
+                                HeaderText="Doctor Name" />
+
+                            <asp:BoundField DataField="Hospital"
+                                HeaderText="Hospital" />
+
+                            <asp:BoundField DataField="Booking_Date"
+                                HeaderText="Booking Date"
+                                DataFormatString="{0:dd-MM-yyyy}" />
+
+                            <asp:BoundField DataField="Appointment_Date"
+                                HeaderText="Appointment Date"
+                                DataFormatString="{0:dd-MM-yyyy}" />
+
+                            <asp:BoundField DataField="Time_Slot"
+                                HeaderText="Time Slot" />
+
+                            <asp:BoundField DataField="Booking_Status"
+                                HeaderText="Status" />
+
+                            <asp:TemplateField HeaderText="Action">
+                                <ItemTemplate>
+
+                                    <asp:LinkButton ID="btnFeedback" runat="server"
+                                        Text="Feedback"
+                                        CssClass="btn btn-sm btn-success action-btn"
+                                        CommandName="GiveFeedback"
+                                        CommandArgument='<%# Eval("Appointment_Id") %>'>
+</asp:LinkButton>
+                                    <asp:LinkButton ID="btnUpdate" runat="server"
+                                        Text="Update"
+                                        CssClass="btn btn-sm btn-primary action-btn"
+                                        CommandName="UpdateAppointment"
+                                        CommandArgument='<%# Eval("Appointment_Id") %>'>
+        </asp:LinkButton>
+
+                                    <asp:LinkButton ID="btnCancel" runat="server"
+                                        Text="Cancel"
+                                        CssClass="btn btn-sm btn-danger action-btn"
+                                        CommandName="CancelAppointment"
+                                        CommandArgument='<%# Eval("Appointment_Id") %>'>
+        </asp:LinkButton>
+
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+
+                    </asp:GridView>
+
+                </div>
+
+            </div>
+
+
+            <!-- UPDATE APPOINTMENT POPUP -->
+            <asp:Panel ID="pnlUpdate" runat="server"
+                Visible="false"
+                CssClass="popup-background">
+
+                <div class="popup-panel">
+
+                    <h4 class="fw-bold mb-2">Update Appointment</h4>
+
+                    <p class="text-muted">
+                        Select a new appointment date and time slot.
+                   
+                    </p>
+
+                    <asp:HiddenField ID="hfAppointmentId" runat="server" />
+
+                    <asp:HiddenField ID="hfDoctorId" runat="server" />
+
+
+                    <!-- SELECT DATE -->
+                    <div class="mb-3">
+
+                        <label class="form-label fw-semibold">
+                            Select Appointment Date
+                       
+                        </label>
+
+                        <div class="calendar-box">
+
+                            <asp:Calendar ID="calDate" runat="server"
+                                CssClass="table table-bordered"
+                                SelectionMode="Day"
+                                OnSelectionChanged="calDate_SelectionChanged">
+
+                                <SelectedDayStyle
+                                    BackColor="#0d6efd"
+                                    ForeColor="White" />
+
+                                <TodayDayStyle
+                                    BackColor="#dbeafe" />
+
+                                <DayHeaderStyle
+                                    BackColor="#f1f5f9"
+                                    Font-Bold="true" />
+
+                            </asp:Calendar>
+
+                        </div>
+
+                        <asp:Label ID="lblSelectedDate" runat="server"
+                            CssClass="text-primary fw-semibold">
+                        </asp:Label>
+
+                    </div>
+
+
+                    <!-- SELECT TIME SLOT -->
+                    <div class="mb-3">
+
+                        <label class="form-label fw-semibold">
+                            Select Time Slot
+                       
+                        </label>
+
+                        <asp:DropDownList ID="ddlTimeSlot" runat="server"
+                            CssClass="form-select">
+                        </asp:DropDownList>
+
+                        <asp:Label ID="lblSlotInfo" runat="server"
+                            CssClass="text-danger small mt-2 d-block">
+                        </asp:Label>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="d-flex gap-2 justify-content-end">
+
+                        <asp:Button ID="btnCloseUpdate" runat="server"
+                            Text="Close"
+                            CssClass="btn btn-secondary"
+                            OnClick="btnCloseUpdate_Click"
+                            CausesValidation="false" />
+
+                        <asp:Button ID="btnSaveUpdate" runat="server"
+                            Text="Save Changes"
+                            CssClass="btn btn-primary"
+                            OnClick="btnSaveUpdate_Click" />
+
+                    </div>
+
+                </div>
+
+            </asp:Panel>
+
+
+
+            <!-- CANCEL CONFIRMATION POPUP -->
+            <asp:Panel ID="pnlCancel" runat="server"
+                Visible="false"
+                CssClass="popup-background">
+
+                <div class="popup-panel text-center">
+
+                    <asp:HiddenField ID="hfCancelAppointmentId" runat="server" />
+
+                    <h4 class="fw-bold mb-3">Cancel Appointment?
+                    </h4>
+
+                    <p class="text-muted">
+                        Are you sure you want to cancel this appointment?
+                   
+                    </p>
+
+                    <p class="text-danger small">
+                        If eligible, a 50% refund will be recorded as pending.
+                   
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-2">
+
+                        <asp:Button ID="btnNoCancel" runat="server"
+                            Text="No, Keep It"
+                            CssClass="btn btn-secondary"
+                            OnClick="btnNoCancel_Click"
+                            CausesValidation="false" />
+
+                        <asp:Button ID="btnYesCancel" runat="server"
+                            Text="Yes, Cancel"
+                            CssClass="btn btn-danger"
+                            OnClick="btnYesCancel_Click"
+                            CausesValidation="false" />
+
+                    </div>
+
+                </div>
+
+            </asp:Panel>
+
+        </div>
+
     </main>
 
-                    <%--**********     logout   *********--%>
 
-                    <%--<div class="container py-5">
+    <%--**********     logout   *********--%>
+
+    <%--         <div class="container py-5">
                         <div class="row justify-content-center">
                             <div class="col-lg-6" data-aos="fade-up">
                                 <div class="card border-0 shadow rounded-4 p-5 text-center">

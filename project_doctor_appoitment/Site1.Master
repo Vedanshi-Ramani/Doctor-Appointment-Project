@@ -45,9 +45,10 @@
                         <li class="nav-item"><a class="nav-link active" href="index.aspx">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.aspx">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="search_doctor.aspx">Search Doctor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.aspx">History</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.aspx">Contact</a></li>
-                        <li class="nav-item"><a class="btn btn-primary rounded-pill ms-lg-3" href="login.aspx">Login</a></li>
-                        <li class="nav-item"><a class="btn btn-outline-primary rounded-pill ms-2" href="registration.aspx">Register</a></li>
+                        <li class="nav-item"><a class="btn btn-primary rounded-pill ms-lg-3" href="login.aspx">Logout</a></li>
+<%--                        <li class="nav-item"><a class="btn btn-outline-primary rounded-pill ms-2" href="registration.aspx">Register</a></li>--%>
                     </ul>
                 </div>
             </div>

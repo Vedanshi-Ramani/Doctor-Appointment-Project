@@ -1095,7 +1095,7 @@
     </main>--%>
 
                     <%--********       feed back  ********--%>
-                    <main class="py-5 bg-light">
+                    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5" data-aos="fade-right">
@@ -1105,13 +1105,13 @@
 
                         <div class="mb-3">
                             <label for="ddlDoctorName" class="form-label">
-                            Doctor Name</label>
+                            Doctor Name</label>--%>
                             <%--<select id="ddlDoctorName" name="DoctorName" class="form-select" required>
                                 <option value="">Select Doctor</option>
                                 <option value="Dr. Sarah Khan">Dr. Sarah Khan</option>
                                 <option value="Dr. Ali Hassan">Dr. Ali Hassan</option>
                             </select>--%>
-                            <asp:DropDownList ID="DropDownList1" runat="server" name="DoctorName" class="form-select" required></asp:DropDownList>
+                           <%-- <asp:DropDownList ID="DropDownList1" runat="server" name="DoctorName" class="form-select" required></asp:DropDownList>
                         </div>
 
                         <div class="mb-3">
@@ -1124,16 +1124,16 @@
 
                         <div class="mb-3">
                             <label for="txtReview" class="form-label">
-                            Review</label>
+                            Review</label>--%>
 <%--                            <textarea id="txtReview" name="Review" class="form-control" rows="5" placeholder="Write your review" required></textarea>\--%>
-                            <asp:TextBox ID="TextBox1" runat="server" name="Review" class="form-control" rows="5" placeholder="Write your review" required></asp:TextBox>
-                        </div>
+                           <%-- <asp:TextBox ID="TextBox1" runat="server" name="Review" class="form-control" rows="5" placeholder="Write your review" required></asp:TextBox>
+                        </div>--%>
 
                         <%--<button type="button" id="btnSubmitFeedback" class="btn btn-primary rounded-pill px-4" onclick="submitFeedback()">
                             Submit
                         </button>--%>
 
-                        <asp:Button ID="Button1" runat="server" Text="Submit"  class="btn btn-primary rounded-pill px-4"/>
+                       <%-- <asp:Button ID="Button1" runat="server" Text="Submit"  class="btn btn-primary rounded-pill px-4"/>
                     </form>
                 </div>
             </div>
@@ -1158,7 +1158,123 @@
             </div>
         </div>
     </div>
-    </main>
+    </main>--%>
+
+
+    <div class="container">
+
+        <div class="feedback-container">
+
+            <h2 class="feedback-title mb-2">Doctor Feedback</h2>
+
+            <p class="text-muted mb-4">
+                Share your experience with your doctor.
+            </p>
+
+
+            <!-- DOCTOR DETAILS -->
+            <div class="doctor-box">
+
+                <h5 class="fw-bold mb-2">
+                    Doctor Details
+                </h5>
+
+                <p class="mb-2">
+                    <strong>Doctor Name:</strong>
+
+                    <asp:Label ID="lblDoctorName" runat="server">
+                    </asp:Label>
+                </p>
+
+                <p class="mb-0">
+                    <strong>Appointment:</strong>
+
+                    <asp:Label ID="lblAppointmentDetails" runat="server">
+                    </asp:Label>
+                </p>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+            <asp:Label ID="lblMessage" runat="server"
+                CssClass="feedback-message fw-semibold">
+            </asp:Label>
+
+
+            <!-- FEEDBACK FORM -->
+            <asp:Panel ID="pnlFeedback" runat="server">
+
+                <!-- RATING -->
+                <div class="mb-4">
+
+                    <label class="form-label fw-bold">
+                        Rate Your Doctor
+                    </label>
+
+                    <asp:DropDownList ID="ddlRating" runat="server"
+                        CssClass="form-select">
+
+                        <asp:ListItem Text="Select Rating" Value="" />
+                        <asp:ListItem Text="1 - Poor" Value="1" />
+                        <asp:ListItem Text="2 - Fair" Value="2" />
+                        <asp:ListItem Text="3 - Good" Value="3" />
+                        <asp:ListItem Text="4 - Very Good" Value="4" />
+                        <asp:ListItem Text="5 - Excellent" Value="5" />
+
+                    </asp:DropDownList>
+
+                </div>
+
+
+                <!-- WRITTEN FEEDBACK -->
+                <div class="mb-4">
+
+                    <label class="form-label fw-bold">
+                        Write Your Feedback
+                    </label>
+
+                    <asp:TextBox ID="txtFeedback" runat="server"
+                        TextMode="MultiLine"
+                        Rows="5"
+                        MaxLength="1000"
+                        CssClass="form-control"
+                        placeholder="Write your experience with this doctor...">
+                    </asp:TextBox>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+                <div class="d-flex gap-2">
+
+                    <asp:Button ID="btnSubmit" runat="server"
+                        Text="Submit Feedback"
+                        CssClass="btn btn-primary"
+                        OnClick="btnSubmit_Click" />
+
+                    <asp:Button ID="btnBack" runat="server"
+                        Text="Back"
+                        CssClass="btn btn-secondary"
+                        OnClick="btnBack_Click"
+                        CausesValidation="false" />
+
+                </div>
+
+            </asp:Panel>
+
+            <asp:Button ID="btnGoHistory" runat="server"
+                Text="Back to Appointment History"
+                CssClass="btn btn-secondary"
+                OnClick="btnBack_Click"
+                CausesValidation="false"
+                Visible="false" />
+
+        </div>
+
+    </div>
+
+
 
    <%-- **********   history        ************
     <main class="py-5 bg-light">

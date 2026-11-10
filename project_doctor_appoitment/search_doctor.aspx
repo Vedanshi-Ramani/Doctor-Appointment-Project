@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="search_doctor.aspx.cs" Inherits="project_doctor_appoitment.search_doctor" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
 
-<%--                *********       home page       ***************--%>
-                <%--<main>
+    <%--                *********       home page       ***************--%>
+    <%--<main>
         <section class="hero-section py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
@@ -347,8 +348,8 @@
             </div>
     </section>
     </main>--%>
-<%--                ***********          about us            *************--%>
-               <%-- <main>
+    <%--                ***********          about us            *************--%>
+    <%-- <main>
         <section class="page-hero py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4">
@@ -441,8 +442,8 @@
             </div>
     </section>--%>
 
-        <!-- Timeline -->
-       <%-- <section class="py-5 bg-light">
+    <!-- Timeline -->
+    <%-- <section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Journey</h2>
@@ -475,10 +476,10 @@
             </div>
     </section>
     </main>--%>
-                <%--********           contact us          **********--%>
+    <%--********           contact us          **********--%>
 
-<%--                <main>--%>
-        <%--<section class="py-5 bg-light">
+    <%--                <main>--%>
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-5" data-aos="fade-right">
@@ -544,8 +545,8 @@
             </div>
     </section>--%>
 
-        <!-- Map Placeholder -->
-        <%--<section class="py-5">
+    <!-- Map Placeholder -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="card border-0 shadow-sm rounded-4 p-5 text-center" data-aos="fade-up">
                     <h3 class="fw-bold">Google Map Placeholder</h3>
@@ -600,9 +601,9 @@
         </div>
     </div>--%>
 
-                <%--********       registration            ****************--%>
+    <%--********       registration            ****************--%>
 
-<%--                <div class="container py-5">
+    <%--                <div class="container py-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8" data-aos="fade-up">
                             <div class="card border-0 shadow rounded-4 p-4">
@@ -681,105 +682,175 @@
                     </div>
     </div>--%>
 
-                <%--**************     search doctor        ******************--%>
+    <%--**************     search doctor        ******************--%>
 
-                <main class="py-5 bg-light">
-    <div class="container">
-        <div class="card border-0 shadow rounded-4 p-4 mb-4" data-aos="fade-up">
-            <h2 class="fw-bold mb-4">Find Your Doctor</h2>
+    <main class="py-5 bg-light">
 
-            <form id="searchForm" novalidate>
-                <div class="row g-3">
+        <div class="container">
+            <div class="card border-0 shadow rounded-4 p-4 mb-4" data-aos="fade-up">
 
-                    <div class="col-md-4">
-                        <label for="txtDoctorName" class="form-label">
-                        Doctor Name</label>
-<%--                        <input type="text" id="txtDoctorName" name="DoctorName" class="form-control" placeholder="Search by doctor name">--%>
-                        <asp:TextBox ID="TextBox1" runat="server" name="DoctorName" class="form-control" placeholder="Search by doctor name"></asp:TextBox>
-                    </div>
+                <h2 class="fw-bold mb-4">Find Your Doctor</h2>
 
-                    <div class="col-md-4">
-                        <label for="ddlSpecialization" class="form-label">
-                        Specialization</label>
-                        <%--<select id="ddlSpecialization" name="Specialization" class="form-select">
+                <form id="searchForm" novalidate>
+                    <div class="row g-3">
+
+                        <div class="col-md-4">
+                            <label for="txtDoctorName" class="form-label">
+                                Doctor Name</label>
+                            <%--                        <input type="text" id="txtDoctorName" name="DoctorName" class="form-control" placeholder="Search by doctor name">--%>
+                            <asp:TextBox ID="txtdcnm" runat="server" name="DoctorName" class="form-control" placeholder="Search by doctor name"></asp:TextBox>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="ddlSpecialization" class="form-label">
+                                Specialization</label>
+                            <%--<select id="ddlSpecialization" name="Specialization" class="form-select">
                             <option value="">All Specializations</option>
                             <option value="Cardiologist">Cardiologist</option>
                             <option value="Dermatologist">Dermatologist</option>
                             <option value="Neurologist">Neurologist</option>
                             <option value="Orthopedic">Orthopedic</option>
                         </select>--%>
-                        <asp:DropDownList ID="DropDownList1" runat="server" name="Specialization" class="form-select">
-                            <asp:ListItem>Cardiologist</asp:ListItem>
-                            <asp:ListItem>Orthopedic</asp:ListItem>
-                            <asp:ListItem>Neurologist</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
+                            <asp:DropDownList ID="drpspec" runat="server" class="form-select"></asp:DropDownList>
+                        </div>
 
-                    <div class="col-md-4">
-                        <label for="txtCity" class="form-label">
-                        City</label>
-<%--                        <input type="text" id="txtCity" name="City" class="form-control" placeholder="e.g. Lahore">--%>
-                        <asp:TextBox ID="TextBox2" runat="server" name="City" class="form-control" placeholder="e.g. Lahore"></asp:TextBox>
-                    </div>
+                       <%-- <div class="col-md-4">
+                            <label for="txtFeeRange" class="form-label">
+                                Fee Range</label>
+                                                      <input type="number" id="txtFeeRange" name="FeeRange" class="form-control" placeholder="Max fee">
+                            <asp:TextBox ID="txtFeeRange" runat="server" class="form-control"></asp:TextBox>
+                        </div>--%>
 
-                    <div class="col-md-4">
-                        <label for="txtHospital" class="form-label">
-                        Hospital</label>
-<%--                        <input type="text" id="txtHospital" name="Hospital" class="form-control" placeholder="Hospital name">--%>
-                        <asp:TextBox ID="TextBox3" runat="server" name="Hospital" class="form-control" placeholder="Hospital name"></asp:TextBox>
-                    </div>
 
-                    <div class="col-md-4">
-                        <label for="txtExperience" class="form-label">
-                        Experience</label>
-                       <input type="number" id="txtExperience" name="Experience" class="form-control" placeholder="Years">
-                    </div>
 
-                    <div class="col-md-4">
-                        <label for="txtFeeRange" class="form-label">
-                        Fee Range</label>
-                        <input type="number" id="txtFeeRange" name="FeeRange" class="form-control" placeholder="Max fee">
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="ddlGender" class="form-label">
-                        Gender</label>
-                        <%--<select id="ddlGender" name="Gender" class="form-select">
-                            <option value="">Any</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>--%>
-                        <asp:DropDownList ID="DropDownList2" runat="server" name="Gender" class="form-select">
-                            <asp:ListItem>Male</asp:ListItem>
-                            <asp:ListItem>Female</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-
-                    <div class="col-12 d-flex gap-2">
-                        <%--<button type="button" id="btnSearchDoctor" class="btn btn-primary rounded-pill" onclick="searchDoctor()">
+                        <div class="col-12 d-flex gap-2">
+                            <%--<button type="button" id="btnSearchDoctor" class="btn btn-primary rounded-pill" onclick="searchDoctor()">
                             Search
                         </button>--%>
-                        <asp:Button ID="Button1" runat="server" Text="Search"  class="btn btn-primary rounded-pill"/>
+                            <asp:Button ID="Button1" runat="server" Text="Search" class="btn btn-primary rounded-pill" OnClick="Button1_Click" />
 
-                        <%--<button type="reset" class="btn btn-outline-secondary rounded-pill">
+                            <%--<button type="reset" class="btn btn-outline-secondary rounded-pill">
                             Reset
                         </button>--%>
-                        <asp:Button ID="Button2" runat="server" Text="Reset" class="btn btn-outline-secondary rounded-pill"/>
+                            <asp:Button ID="Button2" runat="server" Text="Reset" class="btn btn-outline-secondary rounded-pill" OnClick="Button2_Click" />
+                        </div>
+
+
+                    </div>
+                </form>
+
+            </div>
+
+        <div class="doctor-results">
+
+    <asp:DataList
+        ID="DataList1"
+        runat="server"
+        RepeatDirection="Horizontal"
+        RepeatColumns="3"
+        RepeatLayout="Flow"
+        CssClass="doctor-list"
+        OnSelectedIndexChanged="DataList1_SelectedIndexChanged" OnItemCommand="DataList1_ItemCommand">
+
+        <ItemTemplate>
+
+            <div class="doctor-card">
+
+                <!-- DOCTOR IMAGE -->
+                <div class="doctor-image-container">
+
+                    <asp:Image
+                        ID="Image1"
+                        runat="server"
+                        ImageUrl='<%# "~/Admin/" + Eval("Doc_Img") %>'
+                        CssClass="doctor-image" />
+
+                </div>
+
+
+                <!-- DOCTOR DETAILS -->
+                <div class="doctor-details">
+
+                    <!-- Doctor Name -->
+                    <h3 class="doctor-name">
+                        <%# Eval("Doc_Name") %>
+                    </h3>
+
+
+                    <!-- Specialization -->
+                    <div class="doctor-specialty">
+                        <%# Eval("Spec_name") %>
                     </div>
 
 
+                    <!-- Hospital -->
+                    <div class="doctor-info-row">
+
+                        <i class="bi bi-hospital"></i>
+
+                        <span>
+                            <%# Eval("Doc_Hospital") %>
+                        </span>
+
+                    </div>
+
+
+                    <!-- Experience -->
+                    <div class="doctor-info-row">
+
+                        <i class="bi bi-clock"></i>
+
+                        <span>
+                            <%# Eval("Doc_Experience") %> experience
+                        </span>
+
+                    </div>
+
+
+                    <!-- Fee -->
+                    <div class="doctor-info-row">
+
+                        <i class="bi bi-cash"></i>
+
+                        <span>
+                            Fee: ₹<%# Eval("Doc_Fee") %></span></div>
+
+
+                    <!-- Bottom section -->
+                    <div class="doctor-card-bottom">
+
+                        <span class="available-badge">
+                            Available Today
+                        </span>
+
+
+                        <asp:Button
+                            ID="Button3"
+                            runat="server"
+                            Text="View"
+                            CommandArgument='<%# Eval("Doc_Id") %>'
+                            CssClass="view-doctor-btn" CommandName="cmd_doc_pro" />
+
+                    </div>
+
                 </div>
-            </form>
+
+            </div>
+
+        </ItemTemplate>
+
+    </asp:DataList>
+
+</div>
+     
+
         </div>
-        <div id="doctorResults" class="row g-4">
-        </div>
-    </div>
     </main>
 
 
-                <%--**********         doctor profile               ***********--%>
+    <%--**********         doctor profile               ***********--%>
 
-               <%-- <main class="py-5 bg-light">
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4" data-aos="fade-right">
@@ -874,8 +945,8 @@
     </div>
     </main>--%>
 
-                <%--***********            book appoitment      **********--%>
-               <%-- <main class="py-5 bg-light">
+    <%--***********            book appoitment      **********--%>
+    <%-- <main class="py-5 bg-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -931,8 +1002,8 @@
     </div>
     </main>--%>
 
-                <%--************       payment       **********--%>
-                <%--<main class="py-5 bg-light">
+    <%--************       payment       **********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4 justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -1003,8 +1074,8 @@
         </div>
     </div>--%>
 
-<%--                    ***********     doctro list     ***********--%>
-                    <%--<main class="py-5 bg-light">
+    <%--                    ***********     doctro list     ***********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
             <div>
@@ -1106,8 +1177,8 @@
     </div>
     </main>--%>
 
-                    <%--********       feed back  ********--%>
-           <%--         <main class="py-5 bg-light">
+    <%--********       feed back  ********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5" data-aos="fade-right">
@@ -1218,9 +1289,9 @@
     </div>
     </main>--%>
 
-                    <%--**********     logout   *********--%>
+    <%--**********     logout   *********--%>
 
-<%--                    <div class="container py-5">
+    <%--                    <div class="container py-5">
                         <div class="row justify-content-center">
                             <div class="col-lg-6" data-aos="fade-up">
                                 <div class="card border-0 shadow rounded-4 p-5 text-center">

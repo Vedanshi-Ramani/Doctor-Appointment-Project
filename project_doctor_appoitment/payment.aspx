@@ -455,7 +455,7 @@
     </section>--%>
 
         <!-- Timeline -->
-        <section class="py-5 bg-light">
+        <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Journey</h2>
@@ -487,7 +487,7 @@
                 </div>
             </div>
     </section>
-    </main>
+    </main>--%>
                 <%--********           contact us          **********--%>
 
 <%--                <main>--%>
@@ -920,84 +920,82 @@
     </main>--%>
 
                 <%--************       payment       **********--%>
-                <main class="py-5 bg-light">
-    <div class="container">
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-8" data-aos="fade-up">
-                <div class="card border-0 shadow rounded-4 p-4">
-                    <h2 class="fw-bold mb-4">Payment</h2>
-                    <div class="alert alert-info">
-                        Appointment booked successfully. Proceed with payment.</div>
-                    <div class="row g-3 mb-4">
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Doctor Name:</strong> Dr. Sarah Khan</p>
+               
+    <main class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow rounded-4 p-4">
+
+                        <h2 class="fw-bold mb-4">Payment</h2>
+
+                        <div class="alert alert-info">
+                            Review your appointment details and select a payment method.
                         </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Consultation Fee:</strong> $80</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Patient Name:</strong> Ali Ahmed</p>
-                        </div>
-                    </div>
 
-                    <form id="paymentForm" novalidate>
-                        <div class="mb-3">
-                            <label class="form-label">
-                            Payment Methods</label>
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="Google Pay" id="radGooglePay"><label class="form-check-label" for="radGooglePay">Google Pay</label></div>
-                                </div>
+                        <asp:Label ID="lblMessage" runat="server"
+                            CssClass="d-block mb-3 text-danger">
+                        </asp:Label>
 
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="PhonePe" id="radPhonePe"><label class="form-check-label" for="radPhonePe">PhonePe</label></div>
-                                </div>
+                        <div class="row g-3 mb-4">
 
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="Paytm" id="radPaytm"><label class="form-check-label" for="radPaytm">Paytm</label></div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="Credit Card" id="radCreditCard"><label class="form-check-label" for="radCreditCard">Credit Card</label></div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="Debit Card" id="radDebitCard"><label class="form-check-label" for="radDebitCard">Debit Card</label></div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="Net Banking" id="radNetBanking"><label class="form-check-label" for="radNetBanking">Net Banking</label></div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check border rounded-3 p-3">
-                                        <input class="form-check-input" type="radio" name="PaymentMethod" value="UPI" id="radUPI"><label class="form-check-label" for="radUPI">UPI</label></div>
-                                </div>
-
+                            <div class="col-md-6">
+                                <strong>Doctor Name:</strong>
+                                <asp:Label ID="lblDoctorName" runat="server" />
                             </div>
+
+                            <div class="col-md-6">
+                                <strong>Patient Name:</strong>
+                                <asp:Label ID="lblPatientName" runat="server" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>Appointment Date:</strong>
+                                <asp:Label ID="lblAppointmentDate" runat="server" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>Time Slot:</strong>
+                                <asp:Label ID="lblTimeSlot" runat="server" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>Consultation Fee:</strong>
+                                ₹<asp:Label ID="lblAmount" runat="server" />
+                            </div>
+
                         </div>
-                        <div class="mb-3">
-                            <label for="txtAmount" class="form-label">
-                            Amount</label>
-                            <input type="text" id="txtAmount" name="Amount" class="form-control" value="$80" readonly>
-                        </div>
-                        <button type="button" id="btnPay" class="btn btn-primary rounded-pill px-4" onclick="makePayment()">
-                            Pay
-                        </button>
-                    </form>
+
+                        <hr />
+
+                        <h5 class="fw-bold mb-3">Select Payment Method</h5>
+
+                        <asp:RadioButtonList ID="rblPaymentMethod"
+                            runat="server"
+                            CssClass="mb-3"
+                            RepeatDirection="Vertical"
+                            RepeatLayout="Flow">
+
+                            <asp:ListItem Value="Google Pay">Google Pay</asp:ListItem>
+                            <asp:ListItem Value="PhonePe">PhonePe</asp:ListItem>
+                            <asp:ListItem Value="Paytm">Paytm</asp:ListItem>
+                            <asp:ListItem Value="Credit Card">Credit Card</asp:ListItem>
+                            <asp:ListItem Value="Debit Card">Debit Card</asp:ListItem>
+                            <asp:ListItem Value="Net Banking">Net Banking</asp:ListItem>
+                            <asp:ListItem Value="UPI">UPI</asp:ListItem>
+
+                        </asp:RadioButtonList>
+
+                        <asp:Button ID="btnPay" runat="server"
+                            Text="Pay Now"
+                            CssClass="btn btn-primary rounded-pill px-4 mt-3"
+                            OnClick="btnPay_Click" />
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 <%--                    ***********     doctro list     ***********--%>
                     <%--<main class="py-5 bg-light">

@@ -92,7 +92,7 @@ function renderDoctors(doctors) {
                         <p class="text-muted small mb-2"><i class="bi bi-cash me-1"></i>Fee: $${doctor.fee}</p>
                         <div class="d-flex justify-content-between align-items-center mt-3">
                             <span class="badge bg-success-subtle text-success">Available Today</span>
-                            <a href="doctor-profile.html" class="btn btn-sm btn-outline-primary rounded-pill">View</a>
+                            <a href="Doctor_profile.aspx" class="btn btn-sm btn-outline-primary rounded-pill">View</a>
                         </div>
                     </div>
                 </div>

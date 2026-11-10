@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="book_appoitment.aspx.cs" Inherits="project_doctor_appoitment.book_appoitment" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
 
-<%--                *********       home page       ***************--%>
-<%--                <main>--%>
-        <!-- Hero Section -->
-        <%--<section class="hero-section py-5">
+    <%--                *********       home page       ***************--%>
+    <%--                <main>--%>
+    <!-- Hero Section -->
+    <%--<section class="hero-section py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7" data-aos="fade-right">
@@ -27,8 +28,8 @@
             </div>
     </section>--%>
 
-        <!-- About Section -->
-        <%--<section class="py-5 bg-white">
+    <!-- About Section -->
+    <%--<section class="py-5 bg-white">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-up">
@@ -48,8 +49,8 @@
             </div>
     </section>--%>
 
-        <!-- Top Doctors -->
-        <%--<section class="py-5 bg-light">
+    <!-- Top Doctors -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Top Doctors</h2>
@@ -121,8 +122,8 @@
             </div>
     </section>--%>
 
-        <!-- Specializations -->
-        <%--<section class="py-5">
+    <!-- Specializations -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Specializations</h2>
@@ -174,8 +175,8 @@
             </div>
     </section>--%>
 
-        <!-- How It Works -->
-        <%--<section class="py-5 bg-light">
+    <!-- How It Works -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">How it Works</h2>
@@ -214,8 +215,8 @@
             </div>
     </section>--%>
 
-        <!-- Testimonials -->
-        <%--<section class="py-5">
+    <!-- Testimonials -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Patient Testimonials</h2>
@@ -272,8 +273,8 @@
             </div>
     </section>--%>
 
-        <!-- Counters -->
-        <%--<section class="py-5 bg-primary text-white">
+    <!-- Counters -->
+    <%--<section class="py-5 bg-primary text-white">
             <div class="container">
                 <div class="row text-center g-4">
                     <div class="col-md-3" data-aos="zoom-in">
@@ -300,8 +301,8 @@
             </div>
     </section>--%>
 
-        <!-- FAQ -->
-        <%--<section class="py-5">
+    <!-- FAQ -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Frequently Asked Questions</h2>
@@ -335,8 +336,8 @@
             </div>
     </section>--%>
 
-        <!-- Newsletter -->
-        <%--<section class="py-5 bg-light">
+    <!-- Newsletter -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4" data-aos="fade-up">
                     <div class="col-lg-8">
@@ -356,10 +357,10 @@
             </div>
     </section>
     </main>--%>
-<%--                ***********          about us            *************--%>
-<%--                <main>--%>
-        <!-- About Hero -->
-        <%--<section class="page-hero py-5 bg-light">
+    <%--                ***********          about us            *************--%>
+    <%--                <main>--%>
+    <!-- About Hero -->
+    <%--<section class="page-hero py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-lg-7" data-aos="fade-right">
@@ -374,8 +375,8 @@
             </div>
     </section>--%>
 
-        <!-- Mission & Vision -->
-        <%--<section class="py-5">
+    <!-- Mission & Vision -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6" data-aos="fade-up">
@@ -396,8 +397,8 @@
             </div>
     </section>--%>
 
-        <!-- Our Team -->
-        <%--<section class="py-5 bg-light">
+    <!-- Our Team -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Team</h2>
@@ -433,8 +434,8 @@
             </div>
     </section>--%>
 
-        <!-- Why Choose Us -->
-        <%--<section class="py-5">
+    <!-- Why Choose Us -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6" data-aos="fade-right">
@@ -454,8 +455,8 @@
             </div>
     </section>--%>
 
-        <!-- Timeline -->
-        <%--<section class="py-5 bg-light">
+    <!-- Timeline -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="section-heading text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold">Our Journey</h2>
@@ -488,11 +489,11 @@
             </div>
     </section>
     </main>--%>
-                <%--********           contact us          **********--%>
+    <%--********           contact us          **********--%>
 
-<%--                <main>--%>
-        <!-- Contact Section -->
-        <%--<section class="py-5 bg-light">
+    <%--                <main>--%>
+    <!-- Contact Section -->
+    <%--<section class="py-5 bg-light">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-5" data-aos="fade-right">
@@ -558,8 +559,8 @@
             </div>
     </section>--%>
 
-        <!-- Map Placeholder -->
-        <%--<section class="py-5">
+    <!-- Map Placeholder -->
+    <%--<section class="py-5">
             <div class="container">
                 <div class="card border-0 shadow-sm rounded-4 p-5 text-center" data-aos="fade-up">
                     <h3 class="fw-bold">Google Map Placeholder</h3>
@@ -614,9 +615,9 @@
         </div>
     </div>--%>
 
-                <%--********       registration            ****************--%>
+    <%--********       registration            ****************--%>
 
-          <%--      <div class="container py-5">
+    <%--      <div class="container py-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8" data-aos="fade-up">
                             <div class="card border-0 shadow rounded-4 p-4">
@@ -695,9 +696,9 @@
                     </div>
     </div>--%>
 
-                <%--**************     search doctor        ******************--%>
+    <%--**************     search doctor        ******************--%>
 
-<%--                <main class="py-5 bg-light">
+    <%--                <main class="py-5 bg-light">
     <div class="container">
         <div class="card border-0 shadow rounded-4 p-4 mb-4" data-aos="fade-up">
             <h2 class="fw-bold mb-4">Find Your Doctor</h2>
@@ -765,9 +766,9 @@
     </main>--%>
 
 
-                <%--**********         doctor profile               ***********--%>
+    <%--**********         doctor profile               ***********--%>
 
-           <%--     <main class="py-5 bg-light">
+    <%--     <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4" data-aos="fade-right">
@@ -862,84 +863,93 @@
     </div>
     </main>--%>
 
-                <%--***********            book appoitment      **********--%>
-                <main class="py-5 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8" data-aos="fade-up">
-                <div class="card border-0 shadow rounded-4 p-4">
-                    <h2 class="fw-bold mb-4">Book Appointment</h2>
-                    <form id="appointmentForm" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="txtDoctorName" class="form-label">
-                                Doctor Name</label>
-                                <input type="text" id="txtDoctorName" name="DoctorName" class="form-control" value="Dr. Sarah Khan" readonly>
-                            </div>
+    <%--***********            book appoitment      **********--%>
+    <main class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card border-0 shadow rounded-4 p-4">
+
+                        <h2 class="fw-bold mb-4">Book Appointment</h2>
+
+                        <form id="appointmentForm" novalidate>
+
+                            <asp:Label ID="lblMessage" runat="server"
+                                CssClass="text-danger d-block mb-3">
+                        </asp:Label>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="txtDoctorName" class="form-label">
+                                        Doctor Name</label>
+                                    <%--                                <input type="text" id="txtDoctorName" name="DoctorName" class="form-control" value="Dr. Sarah Khan" readonly>--%>
+                                    <asp:TextBox ID="txtdcnm" runat="server" class="form-control"></asp:TextBox>
+                                </div>
 
 
-                            <div class="col-md-6">
-                                <label for="txtPatientName" class="form-label">
-                                Patient Name</label>
-<%--                                <input type="text" id="txtPatientName" name="PatientName" class="form-control" placeholder="Enter patient name" required>--%>
-                                <asp:TextBox ID="txtunm" runat="server" name="PatientName" class="form-control"  required></asp:TextBox>
-                            </div>
+                                <div class="col-md-6">
+                                    <label for="txtPatientName" class="form-label">
+                                        Patient Name</label>
+                                    <%--                                <input type="text" id="txtPatientName" name="PatientName" class="form-control" placeholder="Enter patient name" required>--%>
+                                    <asp:TextBox ID="txtunm" runat="server" name="PatientName" class="form-control"></asp:TextBox>
+                                </div>
 
-                            <div class="col-md-6">
-                                <label for="txtMobile" class="form-label">
-                                Mobile</label>
-                                <%--<input type="tel" id="txtMobile" name="Mobile" class="form-control" placeholder="Enter mobile number" required>--%>
-                                <asp:TextBox ID="TextBox2" runat="server" name="Mobile" class="form-control" placeholder="Enter mobile number" required></asp:TextBox>
-                            </div>
+                                <div class="col-md-6">
+                                    <label for="txtMobile" class="form-label">
+                                        Mobile</label>
+                                    <%--<input type="tel" id="txtMobile" name="Mobile" class="form-control" placeholder="Enter mobile number" required>--%>
+                                    <asp:TextBox ID="txtmbl" runat="server" name="Mobile" class="form-control" placeholder="Enter mobile number"></asp:TextBox>
+                                </div>
 
-                            <div class="col-md-6">
-                                <label for="txtAppointmentDate" class="form-label">
-                                Appointment Date</label>
-                                <input type="date" id="txtAppointmentDate" name="AppointmentDate" class="form-control" required>
-                            </div>
+                                <div class="col-md-6">
+                                    <label for="txtAppointmentDate" class="form-label">
+                                        Appointment Date</label>
+                                    <%--                                <input type="date" id="txtAppointmentDate" name="AppointmentDate" class="form-control" required>--%>
 
-                            <div class="col-12">
-                                <label for="ddlTimeSlot" class="form-label">
-                                Available Time Slot</label>
-                                <%--<select id="ddlTimeSlot" name="TimeSlot" class="form-select" required>
+                                    <asp:TextBox ID="txtAppointmentDate"
+                                        runat="server"
+                                        TextMode="Date"
+                                        CssClass="form-control"
+                                        AutoPostBack="true"
+                                        OnTextChanged="txtAppointmentDate_TextChanged"
+                                        required="required">
+                                </asp:TextBox>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="ddlTimeSlot" class="form-label">
+                                        Available Time Slot</label>
+                                    <%--<select id="ddlTimeSlot" name="TimeSlot" class="form-select" required>
                                     <option value="">Select Slot</option>
                                     <option value="10:00 AM">10:00 AM</option>
                                     <option value="02:00 PM">02:00 PM</option>
                                     <option value="04:30 PM">04:30 PM</option>
                                 </select>--%>
-                                <asp:DropDownList ID="DropDownList1" runat="server" name="TimeSlot" class="form-select" required>
-                                    <asp:ListItem>--select time--</asp:ListItem>
-                                    <asp:ListItem>10:00 AM</asp:ListItem>
-                                    <asp:ListItem Value="11:00 AM"></asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
+                                    <asp:DropDownList ID="DropDownList1" runat="server" class="form-select"></asp:DropDownList>
+                                </div>
 
 
-                            <div class="col-12">
-                                <label for="txtReason" class="form-label">
-                                Reason for Visit</label>
-<%--                                <textarea id="txtReason" name="Reason" class="form-control" rows="4" placeholder="Describe symptoms or reason" required></textarea>--%>
-                                <asp:TextBox ID="TextBox3" runat="server" class="form-control" rows="4" placeholder="Describe symptoms or reason" required></asp:TextBox>
-                            </div>
 
-                            <div class="col-12">
-                                <%--<button type="button" id="btnBookAppointment" class="btn btn-primary rounded-pill px-4" onclick="bookAppointment()">
+
+                                <div class="col-12">
+                                    <%--<button type="button" id="btnBookAppointment" class="btn btn-primary rounded-pill px-4" onclick="bookAppointment()">
                                     Book Appointment
                                 </button>--%>
-                                <asp:Button ID="Button1" runat="server" Text="Book Appoitment"  class="btn btn-primary rounded-pill px-4" OnClick="Button1_Click" />
+                                    <asp:Button ID="Button1" runat="server" Text="Book Appoitment" class="btn btn-primary rounded-pill px-4" OnClick="Button1_Click" />
+                                </div>
+
+
                             </div>
-
-
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </main>
 
-                <%--************       payment       **********--%>
-                <%--<main class="py-5 bg-light">
+    <%--************       payment       **********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4 justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -1010,8 +1020,8 @@
         </div>
     </div>--%>
 
-<%--                    ***********     doctro list     ***********--%>
-           <%--         <main class="py-5 bg-light">
+    <%--                    ***********     doctro list     ***********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
             <div>
@@ -1113,8 +1123,8 @@
     </div>
     </main>--%>
 
-                    <%--********       feed back  ********--%>
-           <%--         <main class="py-5 bg-light">
+    <%--********       feed back  ********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5" data-aos="fade-right">
@@ -1225,9 +1235,9 @@
     </div>
     </main>--%>
 
-                    <%--**********     logout   *********--%>
+    <%--**********     logout   *********--%>
 
-          <%--          <div class="container py-5">
+    <%--          <div class="container py-5">
                         <div class="row justify-content-center">
                             <div class="col-lg-6" data-aos="fade-up">
                                 <div class="card border-0 shadow rounded-4 p-5 text-center">

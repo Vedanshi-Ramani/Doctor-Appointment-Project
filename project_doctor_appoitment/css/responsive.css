@@ -29,3 +29,26 @@
         flex-direction: column;
     }
 }
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-card {
+        width: calc(50% - 6px);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .doctor-card {
+        width: 100%;
+    }
+
+    .search-box {
+        padding: 15px;
+    }
+}

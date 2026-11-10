@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Doctor_profile.aspx.cs" Inherits="project_doctor_appoitment.Doctor_profile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
 
-<%--                *********       home page       ***************--%>
-               <%-- <main>
+    <%--                *********       home page       ***************--%>
+    <%-- <main>
         <section class="hero-section py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
@@ -347,8 +348,8 @@
             </div>
     </section>
     </main>--%>
-<%--                ***********          about us            *************--%>
-                <%--<main>
+    <%--                ***********          about us            *************--%>
+    <%--<main>
         <section class="page-hero py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4">
@@ -474,9 +475,9 @@
             </div>
     </section>
     </main>--%>
-                <%--********           contact us          **********--%>
+    <%--********           contact us          **********--%>
 
-               <%-- <main>
+    <%-- <main>
         <section class="py-5 bg-light">
             <div class="container">
                 <div class="row g-5">
@@ -598,9 +599,9 @@
         </div>
     </div>--%>
 
-                <%--********       registration            ****************--%>
+    <%--********       registration            ****************--%>
 
-                <%--<div class="container py-5">
+    <%--<div class="container py-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8" data-aos="fade-up">
                             <div class="card border-0 shadow rounded-4 p-4">
@@ -679,9 +680,9 @@
                     </div>
     </div>--%>
 
-                <%--**************     search doctor        ******************--%>
+    <%--**************     search doctor        ******************--%>
 
-           <%--     <main class="py-5 bg-light">
+    <%--     <main class="py-5 bg-light">
     <div class="container">
         <div class="card border-0 shadow rounded-4 p-4 mb-4" data-aos="fade-up">
             <h2 class="fw-bold mb-4">Find Your Doctor</h2>
@@ -749,105 +750,436 @@
     </main>--%>
 
 
-                <%--**********         doctor profile               ***********--%>
+    <%--**********         doctor profile               ***********--%>
 
-                <main class="py-5 bg-light">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-4" data-aos="fade-right">
-                <div class="card border-0 shadow rounded-4 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Doctor">
-                </div>
-            </div>
-            <div class="col-lg-8" data-aos="fade-left">
-                <div class="card border-0 shadow rounded-4 p-4">
-                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
-                        <div>
-                            <h2 class="fw-bold mb-1">Dr. Sarah Khan</h2>
-                            <p class="text-primary mb-2">
-                                Cardiologist | MBBS, FCPS</p>
-                        </div>
-                        <span class="badge bg-success-subtle text-success">Available Today</span>
-                    </div>
-                    <div class="row g-3 mt-2">
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Experience:</strong> 15 years</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Specialization:</strong> Cardiology</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Hospital:</strong> Apollo Hospital</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Address:</strong> Karachi</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Languages:</strong> English, Urdu</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2">
-                                <strong>Consultation Fee:</strong> $80</p>
-                        </div>
-                    </div>
-                    <h5 class="mt-4">Education</h5>
-                    <ul>
-                        <li>MBBS – Dow Medical College</li>
-                        <li>FCPS – Cardiology</li>
-                    </ul>
-                    <h5>Certificates</h5>
-                    <ul>
-                        <li>American College of Cardiology</li>
-                        <li>Pakistan Cardiac Society</li>
-                    </ul>
-                    <h5>Achievements</h5>
-                    <ul>
-                        <li>Top 10 Cardiologists Award 2024</li>
-                        <li>Published 30+ medical papers</li>
-                    </ul>
-                    <a href="book-appointment.html" class="btn btn-primary rounded-pill mt-3">Book Appointment</a>
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 mt-2">
-            <div class="col-lg-6" data-aos="fade-up">
-                <div class="card border-0 shadow rounded-4 p-4">
-                    <h4 class="fw-bold">Available Time Slots</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Monday 10:00 AM</li>
-                        <li class="list-group-item">Tuesday 2:00 PM</li>
-                        <li class="list-group-item">Wednesday 4:30 PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="card border-0 shadow rounded-4 p-4">
-                    <h4 class="fw-bold">Ratings & Reviews</h4>
-                    <p class="text-muted">
-                        4.9 ★ from 120 reviews</p>
-                    <div class="border rounded-3 p-3 mb-2">
-                        <strong>Raza</strong>
-                        <p class="text-muted mb-0">
-                            Very thoughtful and professional doctor.</p>
-                    </div>
-                    <div class="border rounded-3 p-3">
-                        <strong>Nadia</strong>
-                        <p class="text-muted mb-0">
-                            Excellent guidance and detailed consultation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </main>
+ 
 
-                <%--***********            book appoitment      **********--%>
-                <%--<main class="py-5 bg-light">
+
+    
+
+
+        <!-- =====================================================
+             MAIN DOCTOR PROFILE PAGE
+             ===================================================== -->
+
+        <main class="doctor-profile-page">
+
+            <div class="doctor-profile-container">
+
+
+                <!-- =================================================
+                     DOCTOR PROFILE DATALIST
+                     ================================================= -->
+
+                <asp:DataList
+                    ID="DataList1"
+                    runat="server"
+                    RepeatDirection="Vertical"
+                    RepeatLayout="Flow"
+                    CssClass="doctor-profile-datalist"
+                    OnItemCommand="DataList1_ItemCommand" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+
+
+                    <ItemTemplate>
+
+
+                        <!-- =================================================
+                             MAIN PROFILE CARD
+                             ================================================= -->
+
+                        <div class="doctor-profile-card">
+
+
+                            <!-- =================================================
+                                 LEFT SIDE - DOCTOR IMAGE
+                                 ================================================= -->
+
+                            <div class="doctor-image-section">
+
+                                <asp:Image
+                                    ID="Image1"
+                                    runat="server"
+                                    ImageUrl='<%# "~/Admin/" + Eval("Doc_Img") %>'
+                                    CssClass="doctor-profile-image" />
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 RIGHT SIDE - DOCTOR DETAILS
+                                 ================================================= -->
+
+                            <div class="doctor-details-section">
+
+
+                                <!-- =============================================
+                                     DOCTOR NAME + AVAILABLE
+                                     ============================================= -->
+
+                                <div class="doctor-title-row">
+
+
+                                    <div>
+
+                                        <h1 class="doctor-name">
+
+                                            Dr.
+                                            <%# Eval("Doc_Name") %>
+
+                                        </h1>
+
+
+                                        <div class="doctor-specialization">
+
+                                            <%# Eval("Spec_name") %>
+
+                                            <span class="separator">
+                                                |
+                                            </span>
+
+                                            <%# Eval("Doc_Degree") %>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <span class="available-badge">
+
+                                        Available Today
+
+                                    </span>
+
+
+                                </div>
+
+
+
+                                <!-- =============================================
+                                     DOCTOR INFORMATION
+                                     ============================================= -->
+
+                                <div class="doctor-information-grid">
+
+
+                                    <!-- EXPERIENCE -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Experience:
+                                        </strong>
+
+                                        <span>
+                                            <%# Eval("Doc_Experience") %>
+                                            years
+                                        </span>
+
+                                    </div>
+
+
+
+                                    <!-- SPECIALIZATION -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Specialization:
+                                        </strong>
+
+                                        <span>
+                                            <%# Eval("Spec_name") %>
+                                        </span>
+
+                                    </div>
+
+
+
+                                    <!-- HOSPITAL -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Hospital:
+                                        </strong>
+
+                                        <span>
+                                            <%# Eval("Doc_Hospital") %>
+                                        </span>
+
+                                    </div>
+
+
+
+                                    <!-- ADDRESS -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Address:
+                                        </strong>
+
+                                        <span>
+                                            <%# Eval("Doc_Address") %>
+                                        </span>
+
+                                    </div>
+
+
+
+                                    <!-- LANGUAGE -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Languages:
+                                        </strong>
+
+                                        <span>
+                                            <%# Eval("Doc_Language") %>
+                                        </span>
+
+                                    </div>
+
+
+
+                                    <!-- FEE -->
+
+                                    <div class="doctor-info">
+
+                                        <strong>
+                                            Consultation Fee:
+                                        </strong>
+
+                                        <span>
+                                            ₹<%# Eval("Doc_Fee") %></span></div>
+
+
+                                </div>
+
+
+
+                                <!-- =============================================
+                                     EDUCATION
+                                     ============================================= -->
+
+                                <div class="doctor-content-section">
+
+                                    <h3>
+                                        Education
+                                    </h3>
+
+                                    <ul>
+
+                                        <li>
+                                            <%# Eval("Doc_Degree") %>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+
+
+                                <!-- =============================================
+                                     CERTIFICATES
+                                     ============================================= -->
+
+                                <div class="doctor-content-section">
+
+                                    <h3>
+                                        Certificates
+                                    </h3>
+
+                                    <ul>
+
+                                        <li>
+                                            <%# Eval("Doc_Certificate") %>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+
+
+                                <!-- =============================================
+                                     ACHIEVEMENTS
+                                     ============================================= -->
+
+                                <div class="doctor-content-section">
+
+                                    <h3>
+                                        Achievements
+                                    </h3>
+
+                                    <ul>
+
+                                        <li>
+                                            <%# Eval("Doc_Achivment") %>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+
+
+                                <!-- =============================================
+                                     BOOK APPOINTMENT BUTTON
+                                     ============================================= -->
+
+                                <asp:Button
+                                    ID="Button1"
+                                    runat="server"
+                                    Text="Book Appointment"
+                                    CssClass="book-appointment-btn"
+                                    CommandName="cmd_doc_id"
+                                    CommandArgument='<%# Eval("Doc_Id") %>' />
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             BOTTOM SECTION
+                             ================================================= -->
+
+                        <div class="doctor-bottom-section">
+
+
+                            <!-- =================================================
+                                 AVAILABLE TIME SLOTS
+                                 ================================================= -->
+
+                            <div class="doctor-bottom-card">
+
+
+                                <h2>
+                                    Available Time Slots
+                                </h2>
+
+
+                                <div class="time-slot">
+
+                                    <span>
+                                        Monday
+                                    </span>
+
+                                    <span>
+                                        10:00 AM
+                                    </span>
+
+                                </div>
+
+
+                                <div class="time-slot">
+
+                                    <span>
+                                        Tuesday
+                                    </span>
+
+                                    <span>
+                                        2:00 PM
+                                    </span>
+
+                                </div>
+
+
+                                <div class="time-slot">
+
+                                    <span>
+                                        Wednesday
+                                    </span>
+
+                                    <span>
+                                        4:30 PM
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 RATINGS AND REVIEWS
+                                 ================================================= -->
+
+                            <div class="doctor-bottom-card">
+
+
+                                <h2>
+                                    Ratings &amp; Reviews
+                                </h2>
+
+
+                                <div class="rating-summary">
+
+                                    <span class="rating-number">
+                                        4.9 ★
+                                    </span>
+
+                                    <span>
+                                        from 120 reviews
+                                    </span>
+
+                                </div>
+
+
+                                <div class="review-box">
+
+                                    <strong>
+                                        Raza
+                                    </strong>
+
+                                    <p>
+                                        Very thoughtful and professional doctor.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="review-box">
+
+                                    <strong>
+                                        Nadia
+                                    </strong>
+
+                                    <p>
+                                        Excellent guidance and detailed consultation.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </ItemTemplate>
+
+
+                </asp:DataList>
+
+
+            </div>
+
+        </main>
+
+
+
+
+    <%--***********            book appoitment      **********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -903,8 +1235,8 @@
     </div>
     </main>--%>
 
-                <%--************       payment       **********--%>
-                <%--<main class="py-5 bg-light">
+    <%--************       payment       **********--%>
+    <%--<main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4 justify-content-center">
             <div class="col-lg-8" data-aos="fade-up">
@@ -975,8 +1307,8 @@
         </div>
     </div>--%>
 
-<%--                    ***********     doctro list     ***********--%>
-           <%--         <main class="py-5 bg-light">
+    <%--                    ***********     doctro list     ***********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
             <div>
@@ -1078,8 +1410,8 @@
     </div>
     </main>--%>
 
-                    <%--********       feed back  ********--%>
-           <%--         <main class="py-5 bg-light">
+    <%--********       feed back  ********--%>
+    <%--         <main class="py-5 bg-light">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5" data-aos="fade-right">
@@ -1190,9 +1522,9 @@
     </div>
     </main>--%>
 
-                    <%--**********     logout   *********--%>
+    <%--**********     logout   *********--%>
 
-<%--                    <div class="container py-5">
+    <%--                    <div class="container py-5">
                         <div class="row justify-content-center">
                             <div class="col-lg-6" data-aos="fade-up">
                                 <div class="card border-0 shadow rounded-4 p-5 text-center">
